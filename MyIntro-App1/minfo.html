@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>HTML5 개인 포트폴리오 홈페이지</title>
+	<link rel="stylesheet" href="mportpolio.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		.odd:hover {
+			background-color: red;
+			color: white;
+		}
+
+		.even:hover {
+			background-color: blue;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>박웅기 홈페이지</h1>
+	</header>
+	<div data-role="navbar" data-type="horizontal">
+		<ul>
+			<li><a href="#panel3" data-transition="flip"> 경력 </a></li>
+			<li><a href="#panel1" data-transition="flip"> 학술 </a></li>
+			<li><a href="minfo.html" class="ui-btn-active" data-transition="flip"> 인적 </a></li>
+			<li><a href="mintro.html" data-transition="flip"> 소개 </a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<section class="section1">
+			<h3>인적사항</h3>
+			<ul>
+				<li>성 명 : 박웅기</li>
+				<li>생년월일 : 1996. 01. 15.</li>
+				<li><a href="mailto:sbe03005@naver.com">sbe03005@naver.com</a></li>
+				<li><a href="tel:01062508207" target="_blank">전화 연락처 : 01062508207</a></li>
+				<li><a href="sms:01062508207" target="_blank">SMS 문자 연락처 : 01062508207</a></li>
+				<li><a href="http://maps.google.com/maps?q=37.487948, 126.825136&hl=ko" data-transition="flip"
+						target="_blank">위성좌표 링크</a></li>
+				<li><a href="http://maps.google.com/maps?q=대한민국+서울특별시+구로구+연동로+320&hl=ko" target="_blank">주소 링크</a></li>
+				<li>학 력
+					<table class="ui-responsive table-stripe" id="year-table" data-mode="columntoggle"
+						data-role="table">
+						<thead>
+							<tr>
+								<th data-priority="1">졸업년도</th>
+								<th data-priority="2">출신학교</th>
+								<th data-priority="3">지역</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="odd">
+								<td>2008. 2</td>
+								<td> 서울봉은초등학교 졸업</td>
+								<td> 서울특별시 강남구</td>
+							</tr>
+							<tr class="even">
+								<td>2011. 2.</td>
+								<td> 서울봉은중학교 졸업</td>
+								<td> 서울특별시 강남구</td>
+							</tr>
+							<tr class="odd">
+								<td>2014. 2.</td>
+								<td> 경기고등학교 졸업</td>
+								<td> 서울특별시 강남구</td>
+							</tr>
+							<tr class="even">
+								<td>2015. 3.</td>
+								<td> 성공회대학교 컴퓨터공학과 입학</td>
+								<td> 서울특별시 구로구</td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+			</ul>
+		</section>
+		<!-- <img id="logo" src="logo.jpg" /> -->
+		<aside>
+			<h3>참조링크</h3>
+			<a href="http://www.naver.com">
+				<img class="portal" src="naver.jpg" alt="네이버이동" />
+			</a>
+			<a href="http://www.google.com">
+				<img class="portal" src="google.jpg" alt="구글이동" />
+			</a>
+			<a href="http://www.daum.net">
+				<img class="portal" src="daum.jpg" alt="다음이동" />
+			</a>
+		</aside>
+	</div>
+
+	<div data-role="panel" id="panel1" data-display="overlay">
+		<form>
+			<div data-role="content">
+				<p>학술</p> <br />
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="검색키워드를 입력하세요">
+					<li data-role="listdivider" data-divider-theme="a">2015년 1학년 1학기 : 4.08</li>
+					<li><a href="#">기초영어1<span class="ui-li-count">전필</span></a></li>
+					<li><a href="#">정보사회론<span class="ui-li-count">전필</span></a></li>
+					<li><a href="#">공업수학1<span class="ui-li-count">전필</span></a></li>
+					<li><a href="#">C프로그래밍<span class="ui-li-count">전필</span></a></li>
+
+					<li data-role="listdivider" data-divider-theme="a">2015년 1학년 2학기 : 4.50</li>
+					<li><a href="#">기초영어2<span class="ui-li-count">전선</span></a></li>
+					<li><a href="#">공업수학2<span class="ui-li-count">전필</span></a></li>
+					<li><a href="#">C프로그래밍<span class="ui-li-count">전필</span></a></li>
+					<li><a href="#">C프로그래밍 실습<span class="ui-li-count">전필</span></a></li>
+
+					<li data-role="listdivider" data-divider-theme="a">2018년 2학년 1학기 : 4.50</li>
+					<li><a href="#">신호 및 시스템<span class="ui-li-count">전필</span></a></li>
+					<li><a href="#">컴퓨터 네트워크<span class="ui-li-count">전필</span></a></li>
+					<li><a href="#">윈도우즈 프로그래밍<span class="ui-li-count">전필</span></a></li>
+					<li><a href="#">코틀린</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+
+	<div data-role="panel" id="panel3" data-display="overlay" data-position="right">
+		<form>
+			<div data-role="content">
+				<p>경력</p> <br />
+				<ul data-role="listview" data-filter="true" data-filter-placeholder="검색키워드를 입력하세요">
+					<li data-role="listdivider">세미나 (연수)</li>
+					<li><a href="#">한솥밥 튜터링 멘토 참여</a></li>
+					<li><a href="#">SM사업 멘토링 참여</a></li>
+
+					<li data-role="listdivider" data-divider-theme="b">인턴쉽</li>
+					<li><a href="#">아직 없음!</a></li>
+
+					<li data-role="listdivider">봉사 활동</li>
+					<li><a href="#">농어촌 봉사활동</a></li>
+					<li><a href="#">아름다운 가게 봉사활동</a></li>
+
+					<li data-role="listdivider">대외 활동</li>
+					<li><a href="#">학교 공식 어플 스쿠스 React Native 프로젝트 참여</a></li>
+					<li><a href="#">외주 활동 Charang 프로젝트 진행 중</a></li>
+
+				</ul>
+			</div>
+		</form>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+	</div>
+</body>
+
+</html>
