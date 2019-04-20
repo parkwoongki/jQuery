@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 개인 포트폴리오 홈페이지</title>
+    <link rel="stylesheet" type="text/css" href="myportpolio.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>강성구 홈페이지</h1>
+        </header>
+        <div data-role="content">
+
+            <div data-role="tabs">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#tab1">소개</a></li>
+                        <li><a href="#tab2">인적</a></li>
+                        <li><a href="#tab3">교과과정</a></li>
+                        <li><a href="#tab4">비교과과정</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="page" id="tab1">
+                <h3>자기소개</h3>
+                <img id="stu-pic" src="me.jpg">
+                <p>
+                    저는 한국대학교 컴퓨터학과를 졸업하고 모바일 컴퓨팅 관련 분야에 관심을 갖고 있는 강성구입니다. 평소 프로그래밍을 즐겨하였고 특히, 웹 기술 관련하여 XML과 jQuery,
+                    jQuery Mobile, PhoneGap 등에 관심이 많고 다수 개발 경험이 있습니다. 모바일 게임 관련 업체에서 인턴쉽을 수행했으며 데이터베이스 모델링과 튜닝에도 깊은 관심을
+                    가지고 연구하였으며 데이터베이스진흥원에서 주관하는 데이터베이스 관련 공인 자격증도 취득하였습니다. 항상 어떤 환경에서도 최선을 다하고 즐기는 마음으로 열심히 일하고자 합니다.
+                </p>
+            </div>
+
+            <div  id="tab2">
+                <h3>인적사항</h3>
+                <ul>
+                    <li>성 명 : 강성구</li>
+                    <li>생년월일 : 1996. 12. 08</li>
+                    <li>주 소 : 연수구 원인재로81</li>
+                    <li>연 락 처 : 010-3299-1208</li>
+                    <li><a href="mailto:cabk05@hanmail.net">이메일 링크</a></li>
+                    <li><a href="tel:01032991208" target="_blank">전화번호 링크</a></li>
+                    <li><a href="sms:01032991208" target="_blank">SMS 문자 링크</a></li>
+                    <li><a href="http://maps.google.com/maps?q=37.4872325,126.8253202&hl=ko" target="_blank">위성좌표 링크</a>
+                    </li>
+                    <li><a href="http://maps.google.com/maps?q=대한민국+서울특별시+구로구+오류2동+연동로+320&hl=ko" target="_blank">주소
+                            링크</a></li>
+                    <li>학 력
+                        <table class="ui-responsive table-stripe" id="year-table" border="1" data-mode="columntoggle"
+                            data-role="table">
+                            <thead>
+                                <tr>
+                                    <th data-priority="1">졸업연도</th>
+                                    <th data-priority="2">출신학교</th>
+                                    <th data-priority="3">지역</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2003. 2.</td>
+                                    <td> 하늘초등학교 졸업</td>
+                                    <td>인천</td>
+                                </tr>
+                                <tr>
+                                    <td>2006. 2.</td>
+                                    <td> 미래중학교 졸업</td>
+                                    <td>인천</td>
+                                </tr>
+                                <tr>
+                                    <td>2009. 2.</td>
+                                    <td> 미래고등학교 졸업</td>
+                                    <td>인천</td>
+                                </tr>
+                                <tr>
+                                    <td>2014. 2.</td>
+                                    <td> 한국대학교 컴퓨터학과 졸업</td>
+                                    <td>인천</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tab3" data-role="panel" data-display="overlay">
+                <form>
+                    <ul data-role="listview" data-filter="true" data-filter-placeholder="검색키워드를 입력하세요">
+                        <li>
+                            <h2>2018-2</h2>
+                        </li>
+                        <li>mfc<span class="ui-li-count">전필</span></li>
+                        <li>대학 합창<span class="ui-li-count">교양</span></li>
+                        <li>신호및 시스템<span class="ui-li-count">전필</span></li>
+                        <li>컴퓨터 네트워크<span class="ui-li-count">전필</span></li>
+                        <li>
+                            <h2>2019</h2>
+                        </li>
+                        <li><img src="jQuery.PNG">앱프로그래밍<span class="ui-li-count">전선</span></li>
+                    </ul>
+                </form>
+            </div>
+
+            <div id="tab4" data-role="panel" data-display="overlay" data-position="right">
+                <h2>2011 ~ 2013</h2>
+                <li>
+                    <div>정서지원(말벗, 안부전화, 상담 등)</div>
+                    <div>수요처 : 인천사할린동포복지회관</div>
+                </li>
+                <h2>2013</h2>
+                <li>
+                    <div>농촌일손지원</div>
+                    <div>수요처 : 연수구자원봉사센터</div>
+                </li>
+                <h2>2014</h2>
+                <li>
+                    <div>농촌일손지원</div>
+                    <div>수요처 : 렘넌트지역아동센터</div>
+                </li>
+                <h2>2015</h2>
+                <li>
+                    <div>하이서울페스티벌2015</div>
+                    <div>수요처 : 하이서울페스티벌</div>
+                </li>
+                <h2>2016</h2>
+                <li>
+                    <div>자원봉사기초교육, 환경정화활동</div>
+                    <div>수요처 : 동구자원봉사센터</div>
+                </li>
+                <a href="#page1" data-role="button" data-rel="close" data-inline="true">패널 종료</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
