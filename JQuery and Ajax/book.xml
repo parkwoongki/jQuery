@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (book.xml) -->
+<booklist>
+	<book kind="인문">
+		<title>느림의 미학</title>
+		<author>박현우</author>
+		<publisher>행복 출판사</publisher>
+		<price>30000</price>
+	</book>
+	<book kind="컴퓨터">
+		<title>jQuery Mobile</title>
+		<author>홍길동</author>
+		<publisher>미래 출판사</publisher>
+		<price>25000</price>
+	</book>
+	<book kind="소설">
+		<title>화성에서 온 낙지</title>
+		<author>이꾸민</author>
+		<publisher>도서출판 망상</publisher>
+		<price>5000</price>
+	</book>
+	<book kind="컴퓨터">
+		<title>XML DATABASE Programming</title>
+		<author>홍길동</author>
+		<publisher>행복 출판사</publisher>
+		<price>25000</price>
+	</book>
+</booklist>
+
